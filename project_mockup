@@ -1,0 +1,39 @@
+Breakfast & Bed
+
+Classes:
+	Players, rooms, items, MOBs, Interface
+
+Players can:
+	move, pick up, put down, interact with room
+
+Rooms can:
+	hold items
+
+Items can:
+	affect players
+
+-Players are MOBs who are controlled by interface rather than on their own?
+
+-Maybe rooms exist on x, y coordinate plane. NESW corresponds to x and y change?
+
+-Rooms should know what MOBs/players are in them
+
+-Interface is given a player reference and issues commands to it? (most iffy idea)
+
+Players have:
+	name, inventory, legal restaurant
+
+Rooms (can) have:
+	players, inventory, MOBs
+
+-obstacles, deliveries, dodging, limited turns
+-pizza, grapes, spaghetti, apple, breakfast (egg), mattress
+-money, fired, small spaghetti restaurant, mattress store
+-wage based on number of turns
+-opportunity to start own business
+-delivery capacity
+
+xxx
+xxx
+xxx
+

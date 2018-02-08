@@ -1,0 +1,28 @@
+Donte Small, Edem Kingsley-Amoah, Zoe Jacobson, Julian Fernandez
+
+Breakfast & Bed
+
+Breakfast & Bed will be a delivery-themed MUD game. Players will receieve deliveries from their local
+business and deliver items to specified nonplayers with a given description.
+
+Each order will have a limit on the number of turns that can be taken to complete the delivery.
+When the player delivers the order to the specified nonplayer, the nonplayer will give payment to the player. 
+This payment will be based on the number of turns taken to complete the order. Payment will be based on the number of
+turns taken and the value of the delivered item.
+
+Payment will take the form of money, which can be spent to purchase better equipment, as well as items
+themselves. Items may be specialized and can take the forms of bikes or cars that allow for the player to complete
+deliveries quicker, in addition to items like backpacks, which allow the player a greater number of items to be carried
+at one time.
+
+If the player fails to deliver the order, the player will lose money, with the potential to be fired. If the player loses
+their job, they will have the opportunity to start their own business - their own delivery service.
+If the player forgets the order, they may use up one turn to check the order. If the player wants to check their own 
+location, they may do so, but again, would lose one turn.
+
+The classes will function like this:
+	Input will be handled by an implementation of an abstract class called GameInterface. This interface will hold a Player reference and be a member of the Engine class, which functions as the game's main class.
+	The Engine class will use the Singleton pattern and only one Engine may ever be instantiated during the program. The Engine will contain an ArrayList of GameInterfaces - the intention here being that more than one player may be playing at a time.
+	The engine's main function will be to handle interaction between the GameInterface and the Map class, which will contain a layout of room objects that the players and nonplayer mobs may traverse and interact with.
+	Rooms and mobs (either player or nonplayer) all have Inventory objects, which handle item management.
+	Finally, mobs will have delivery objects that handle all the logistics of their various deliveries.
